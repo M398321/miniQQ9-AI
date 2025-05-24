@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:text="QQ9"
+            android:id="@+id/qq9"
+            android:textStyle="bold"
+            android:textSize="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="85dp"
+            android:textColor="@color/dodgerblue"
+            android:fontFamily="@font/q"
+            android:layout_height="wrap_content">
+        </TextView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/xp"
+             />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/username1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:text="M">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/steelblue"
+            android:text="账号管理">
+        </TextView>
+
+    </LinearLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/loginBtn1"
+        android:layout_width="320dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="一键登录"
+        android:layout_height="55dp" />
+    <RadioButton
+        android:layout_marginTop="25dp"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        android:text="已阅读并同意服务协议和QQ隐私保护指引"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </RadioButton>
+</LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <include layout="@layout/content_main" />
+    </LinearLayout>
+</LinearLayout>

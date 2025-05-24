@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ChatActivity"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:background="@color/mikucolor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@mipmap/ic_launcher" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listview_chat"
+        android:layout_marginTop="20dp"
+        android:layout_weight="12"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <ToggleButton
+        android:id="@+id/aiBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textOn="AI自动回复已开启"
+        android:textOff="AI自动回复已关闭"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <include layout="@layout/content_messagein" />
+
+    </LinearLayout>
+
+</LinearLayout>
